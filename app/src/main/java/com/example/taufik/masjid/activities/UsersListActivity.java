@@ -1,5 +1,6 @@
 package com.example.taufik.masjid.activities;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,8 +9,12 @@ import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
+import com.example.taufik.masjid.Gereja;
+import com.example.taufik.masjid.Masjid;
 import com.example.taufik.masjid.R;
+import com.example.taufik.masjid.Wihara;
 import com.example.taufik.masjid.adapters.UsersRecyclerAdapter;
 import com.example.taufik.masjid.model.User;
 import com.example.taufik.masjid.sql.DatabaseHelper;
@@ -38,13 +43,27 @@ public class UsersListActivity extends AppCompatActivity {
         initObjects();
 
     }
+    public void wihara(View view) {
+        Intent wihara = new Intent(this, Wihara.class);
+        startActivity(wihara);
+    }
+    //Pindah screen ke masjid
+    public void masjid(View view) {
+        Intent masjid = new Intent(this, Masjid.class);
+        startActivity(masjid);
+    }
+    //Pindah Screen ke gereja
+    public void gereja(View view) {
+        Intent gereja = new Intent(this, Gereja.class);
+        startActivity(gereja);
+    }
 
     /**
      * This method is to initialize views
      */
     private void initViews() {
         textViewName = (AppCompatTextView) findViewById(R.id.textViewName);
-        recyclerViewUsers = (RecyclerView) findViewById(R.id.recyclerViewUsers);
+        //recyclerViewUsers = (RecyclerView) findViewById(R.id.recyclerViewUsers);
     }
 
     /**

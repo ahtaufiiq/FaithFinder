@@ -43,5 +43,27 @@
         <!--android:id="@+id/recyclerViewUsers"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent" />-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="Cari Wihara"
+        android:onClick="wihara"/>
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="Cari Masjid"
+        android:onClick="masjid"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="Cari Gereja"
+        android:onClick="gereja"/>
 
 </LinearLayout>
