@@ -48,7 +48,7 @@
         android:layout_height="60dp"
         android:id="@+id/masjid"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/Mosque"
+        android:src="@drawable/mosque"
         android:paddingLeft="150dp"
         android:layout_marginTop="30dp"/>
     <TextView
@@ -65,7 +65,7 @@
         android:id="@+id/wihara"
         android:layout_centerHorizontal="true"
         android:text="Cari Wihara"
-        android:src="@drawable/Temple"
+        android:src="@drawable/temple"
         android:paddingLeft="140dp"/>
     <TextView
         android:layout_width="wrap_content"
@@ -82,7 +82,7 @@
         android:id="@+id/gereja"
         android:layout_centerHorizontal="true"
         android:text="Cari Gereja"
-        android:src="@drawable/Cathedral"
+        android:src="@drawable/cathedral"
         android:paddingLeft="150dp"/>
 
     <TextView
