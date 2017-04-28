@@ -43,27 +43,27 @@
         <!--android:id="@+id/recyclerViewUsers"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent" />-->
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-
+        android:id="@+id/wihara"
         android:layout_centerHorizontal="true"
         android:text="Cari Wihara"
-        android:onClick="wihara"/>
-    <Button
+        android:src="@drawable/Temple"/>
+    <ImageView
 
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-
+        android:id="@+id/masjid"
         android:layout_centerHorizontal="true"
         android:text="Cari Masjid"
-        android:onClick="masjid"/>
-    <Button
+        android:src="@drawable/Mosque"/>
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-
+        android:id="@+id/gereja"
         android:layout_centerHorizontal="true"
         android:text="Cari Gereja"
-        android:onClick="gereja"/>
+        android:src="@drawable/Cathedral"/>
 
 </LinearLayout>

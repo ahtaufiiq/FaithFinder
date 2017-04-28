@@ -10,6 +10,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.example.taufik.masjid.Gereja;
 import com.example.taufik.masjid.Masjid;
@@ -34,6 +35,8 @@ public class UsersListActivity extends AppCompatActivity {
     private UsersRecyclerAdapter usersRecyclerAdapter;
     private DatabaseHelper databaseHelper;
 
+    ImageView masjid,gereja,wihara;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,21 +45,56 @@ public class UsersListActivity extends AppCompatActivity {
         initViews();
         initObjects();
 
+        masjid = (ImageView)findViewById(R.id.masjid);
+        gereja = (ImageView)findViewById(R.id.gereja);
+        wihara = (ImageView)findViewById(R.id.wihara);
+
+        masjid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent masjid = new Intent(UsersListActivity.this, Masjid.class);
+                startActivity(masjid);
+
+            }
+        });
+
+        wihara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent wihara = new Intent(UsersListActivity.this, Wihara.class);
+                startActivity(wihara);
+
+            }
+        });
+
+        gereja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent gereja= new Intent(UsersListActivity.this, Gereja.class);
+                startActivity(gereja);
+
+            }
+        });
+
+
+
     }
-    public void wihara(View view) {
-        Intent wihara = new Intent(this, Wihara.class);
-        startActivity(wihara);
-    }
-    //Pindah screen ke masjid
-    public void masjid(View view) {
-        Intent masjid = new Intent(this, Masjid.class);
-        startActivity(masjid);
-    }
-    //Pindah Screen ke gereja
-    public void gereja(View view) {
-        Intent gereja = new Intent(this, Gereja.class);
-        startActivity(gereja);
-    }
+
+
+
+//    //Pindah screen ke masjid
+//    public void masjid(View view) {
+//        Intent masjid = new Intent(this, Masjid.class);
+//        startActivity(masjid);
+//    }
+//    //Pindah Screen ke gereja
+//    public void gereja(View view) {
+//        Intent gereja = new Intent(this, Gereja.class);
+//        startActivity(gereja);
+//    }
 
     /**
      * This method is to initialize views
@@ -70,14 +108,14 @@ public class UsersListActivity extends AppCompatActivity {
      * This method is to initialize objects to be used
      */
     private void initObjects() {
-        listUsers = new ArrayList<>();
-        usersRecyclerAdapter = new UsersRecyclerAdapter(listUsers);
-
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerViewUsers.setLayoutManager(mLayoutManager);
-        recyclerViewUsers.setItemAnimator(new DefaultItemAnimator());
-        recyclerViewUsers.setHasFixedSize(true);
-        recyclerViewUsers.setAdapter(usersRecyclerAdapter);
+//        listUsers = new ArrayList<>();
+//        usersRecyclerAdapter = new UsersRecyclerAdapter(listUsers);
+//
+//        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+//        recyclerViewUsers.setLayoutManager(mLayoutManager);
+//        recyclerViewUsers.setItemAnimator(new DefaultItemAnimator());
+//        recyclerViewUsers.setHasFixedSize(true);
+//        recyclerViewUsers.setAdapter(usersRecyclerAdapter);
         databaseHelper = new DatabaseHelper(activity);
 
         String nameFromIntent = getIntent().getStringExtra("USERNAME");
