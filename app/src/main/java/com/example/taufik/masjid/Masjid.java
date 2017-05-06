@@ -65,6 +65,7 @@ public class Masjid extends FragmentActivity implements LocationListener  {
                 @Override
                 public void onMapReady(GoogleMap googleMap) {
                     mGoogleMap = googleMap;
+                    mGoogleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
                     initMap();
                 }
             });
@@ -145,7 +146,7 @@ public class Masjid extends FragmentActivity implements LocationListener  {
         LatLng latLng = new LatLng(mLatitude, mLongitude);
 
         mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-        mGoogleMap.animateCamera(CameraUpdateFactory.zoomTo(12));
+        mGoogleMap.animateCamera(CameraUpdateFactory.zoomTo(15));
     }
 
     @Override

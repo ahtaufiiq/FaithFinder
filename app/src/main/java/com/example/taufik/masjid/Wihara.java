@@ -65,6 +65,7 @@ public class Wihara extends FragmentActivity implements LocationListener  {
                 @Override
                 public void onMapReady(GoogleMap googleMap) {
                     mGoogleMap = googleMap;
+                    mGoogleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
                     initMap();
                 }
             });
@@ -76,7 +77,7 @@ public class Wihara extends FragmentActivity implements LocationListener  {
                 public void onClick(View v) {
                     StringBuilder sb = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
                     sb.append("location=" + mLatitude + "," + mLongitude);
-                    sb.append("&radius=15000");
+                    sb.append("&radius=10000");
                     sb.append("&types=temple");//kata yang dicari di maps
                     sb.append("&sensor=true");
                     sb.append("&key=" + API_KEY_SERVER);
