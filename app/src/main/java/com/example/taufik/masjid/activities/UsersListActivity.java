@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatTextView;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -35,7 +36,8 @@ public class UsersListActivity extends AppCompatActivity {
     private UsersRecyclerAdapter usersRecyclerAdapter;
     private DatabaseHelper databaseHelper;
 
-    ImageView masjid,gereja,wihara;
+    CardView masjid,gereja,wihara;
+//    ImageView masjid,gereja,wihara;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,9 +47,9 @@ public class UsersListActivity extends AppCompatActivity {
         initViews();
         initObjects();
 
-        masjid = (ImageView)findViewById(R.id.masjid);
-        gereja = (ImageView)findViewById(R.id.gereja);
-        wihara = (ImageView)findViewById(R.id.wihara);
+        masjid = (CardView)findViewById(R.id.card_view);
+        gereja = (CardView)findViewById(R.id.card_view2);
+        wihara = (CardView)findViewById(R.id.card_view1);
 
         masjid.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -43,54 +43,55 @@
         <!--android:id="@+id/recyclerViewUsers"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent" />-->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:id="@+id/masjid"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/mosque"
-        android:paddingLeft="150dp"
-        android:layout_marginTop="30dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Masjid"
-        android:textColor="#000000"
-        android:paddingLeft="170dp"
-        android:layout_marginBottom="30dp"
-        />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:id="@+id/wihara"
-        android:layout_centerHorizontal="true"
-        android:text="Cari Wihara"
-        android:src="@drawable/temple"
-        android:paddingLeft="140dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wihara"
-        android:textColor="#000000"
-        android:paddingLeft="170dp"
-        android:layout_marginBottom="30dp"
-        />
+    <include layout="@layout/content_main" />
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:id="@+id/masjid"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/mosque"-->
+        <!--android:paddingLeft="150dp"-->
+        <!--android:layout_marginTop="30dp"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Masjid"-->
+        <!--android:textColor="#000000"-->
+        <!--android:paddingLeft="170dp"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--/>-->
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:id="@+id/wihara"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Cari Wihara"-->
+        <!--android:src="@drawable/temple"-->
+        <!--android:paddingLeft="140dp"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Wihara"-->
+        <!--android:textColor="#000000"-->
+        <!--android:paddingLeft="170dp"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--/>-->
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:id="@+id/gereja"
-        android:layout_centerHorizontal="true"
-        android:text="Cari Gereja"
-        android:src="@drawable/cathedral"
-        android:paddingLeft="150dp"/>
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:id="@+id/gereja"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Cari Gereja"-->
+        <!--android:src="@drawable/cathedral"-->
+        <!--android:paddingLeft="150dp"/>-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Masjid"
-        android:textColor="#000000"
-        android:paddingLeft="170dp"
-        />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Masjid"-->
+        <!--android:textColor="#000000"-->
+        <!--android:paddingLeft="170dp"-->
+        <!--/>-->
 
 </LinearLayout>
