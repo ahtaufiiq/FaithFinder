@@ -1,4 +1,4 @@
-package com.example.taufik.masjid.helpers;
+package com.geekies.sisfo.masjid.helpers;
 
 /**
  * Created by Ginan on 4/28/2017.

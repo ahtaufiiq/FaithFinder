@@ -1,4 +1,4 @@
-package com.example.taufik.masjid;
+package com.geekies.sisfo.masjid;
 
 /**
  * Created by taufik on 26/04/17.
@@ -17,7 +17,6 @@ public class ParseJSONPlace {
 
 
     public List<HashMap<String, String>> parse(JSONObject jObject) {
-
         JSONArray jPlaces = null;
         try {
             jPlaces = jObject.getJSONArray("results");

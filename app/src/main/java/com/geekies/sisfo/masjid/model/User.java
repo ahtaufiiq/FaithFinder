@@ -1,4 +1,4 @@
-package com.example.taufik.masjid.model;
+package com.geekies.sisfo.masjid.model;
 
 /**
  * Created by Ginan on 4/28/2017.

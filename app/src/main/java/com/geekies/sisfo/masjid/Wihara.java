@@ -1,8 +1,6 @@
-package com.example.taufik.masjid;
+package com.geekies.sisfo.masjid;
 
 import android.os.Bundle;
-
-import android.support.v7.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -11,7 +9,6 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
-import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -37,7 +34,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
-public class Gereja extends FragmentActivity implements LocationListener {
+public class Wihara extends FragmentActivity implements LocationListener  {
 
     private String API_KEY_SERVER = "AIzaSyAvObrgdwTTdphwOYplRp44f_Q52GUWYcI";
 
@@ -49,11 +46,10 @@ public class Gereja extends FragmentActivity implements LocationListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gereja);
+        setContentView(R.layout.activity_wihara);
 
 
-
-        Button btnFindGereja = (Button) findViewById(R.id.btn_findgereja);
+        Button btnFindWihara = (Button) findViewById(R.id.btn_findwihara);
 
         // cek google play services
         int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getBaseContext());
@@ -62,7 +58,7 @@ public class Gereja extends FragmentActivity implements LocationListener {
             Dialog dialog = GooglePlayServicesUtil.getErrorDialog(status, this, requestCode);
             dialog.show();
         } else {
-            SupportMapFragment fragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapgereja);
+            SupportMapFragment fragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapwihara);
             fragment.getMapAsync(new OnMapReadyCallback() {
                 @Override
                 public void onMapReady(GoogleMap googleMap) {
@@ -73,18 +69,18 @@ public class Gereja extends FragmentActivity implements LocationListener {
             });
 
 
-            btnFindGereja.setOnClickListener(new OnClickListener() {
+            btnFindWihara.setOnClickListener(new OnClickListener() {
 
                 @Override
                 public void onClick(View v) {
                     StringBuilder sb = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
                     sb.append("location=" + mLatitude + "," + mLongitude);
-                    sb.append("&radius=5000");
-                    sb.append("&types=church");// kata yang dicari di maps
+                    sb.append("&radius=10000");
+                    sb.append("&types=temple");//kata yang dicari di maps
                     sb.append("&sensor=true");
                     sb.append("&key=" + API_KEY_SERVER);
 
-                    new Gereja.PlacesTask().execute(sb.toString());
+                    new Wihara.PlacesTask().execute(sb.toString());
                 }
             });
 
@@ -92,6 +88,7 @@ public class Gereja extends FragmentActivity implements LocationListener {
         }
 
     }
+
     //cuma peringatan selagi ada permission di manifest dapat dijalankan
     private void initMap() {
         if (mGoogleMap != null) {
@@ -148,7 +145,7 @@ public class Gereja extends FragmentActivity implements LocationListener {
         LatLng latLng = new LatLng(mLatitude, mLongitude);
 
         mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-        mGoogleMap.animateCamera(CameraUpdateFactory.zoomTo(15));
+        mGoogleMap.animateCamera(CameraUpdateFactory.zoomTo(12));
     }
 
     @Override
@@ -174,7 +171,7 @@ public class Gereja extends FragmentActivity implements LocationListener {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            progressDialog = new ProgressDialog(Gereja.this);
+            progressDialog = new ProgressDialog(Wihara.this);
             progressDialog.setIndeterminate(false);
             progressDialog.setCancelable(true);
             progressDialog.setMessage("Loading Peta");
@@ -193,7 +190,7 @@ public class Gereja extends FragmentActivity implements LocationListener {
 
         @Override
         protected void onPostExecute(String result) {
-            new Gereja.ParserTask().execute(result);
+            new Wihara.ParserTask().execute(result);
         }
 
     }

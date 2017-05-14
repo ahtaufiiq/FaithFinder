@@ -1,4 +1,4 @@
-package com.example.taufik.masjid;
+package com.geekies.sisfo.masjid;
 
 import org.junit.Test;
 

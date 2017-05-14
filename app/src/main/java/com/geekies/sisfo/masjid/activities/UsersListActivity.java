@@ -1,27 +1,22 @@
-package com.example.taufik.masjid.activities;
+package com.geekies.sisfo.masjid.activities;
 
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ImageView;
 
-import com.example.taufik.masjid.Gereja;
-import com.example.taufik.masjid.Masjid;
-import com.example.taufik.masjid.R;
-import com.example.taufik.masjid.Wihara;
-import com.example.taufik.masjid.adapters.UsersRecyclerAdapter;
-import com.example.taufik.masjid.model.User;
-import com.example.taufik.masjid.sql.DatabaseHelper;
+import com.geekies.sisfo.masjid.Gereja;
+import com.geekies.sisfo.masjid.Masjid;
+import com.geekies.sisfo.masjid.R;
+import com.geekies.sisfo.masjid.Wihara;
+import com.geekies.sisfo.masjid.adapters.UsersRecyclerAdapter;
+import com.geekies.sisfo.masjid.model.User;
+import com.geekies.sisfo.masjid.sql.DatabaseHelper;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

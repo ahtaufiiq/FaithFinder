@@ -1,4 +1,4 @@
-package com.example.taufik.masjid.adapters;
+package com.geekies.sisfo.masjid.adapters;
 
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.taufik.masjid.R;
-import com.example.taufik.masjid.model.User;
+import com.geekies.sisfo.masjid.R;
+import com.geekies.sisfo.masjid.model.User;
 
 import java.util.List;
 

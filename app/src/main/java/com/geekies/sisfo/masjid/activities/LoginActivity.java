@@ -1,4 +1,4 @@
-package com.example.taufik.masjid.activities;
+package com.geekies.sisfo.masjid.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 
-import com.example.taufik.masjid.sql.DatabaseHelper;
-import com.example.taufik.masjid.helpers.InputValidation;
-import com.example.taufik.masjid.R;
+import com.geekies.sisfo.masjid.sql.DatabaseHelper;
+import com.geekies.sisfo.masjid.helpers.InputValidation;
+import com.geekies.sisfo.masjid.R;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private final AppCompatActivity activity = LoginActivity.this;

@@ -1,4 +1,4 @@
-package com.example.taufik.masjid.activities;
+package com.geekies.sisfo.masjid.activities;
 
 /**
  * Created by Ginan on 4/28/2017.
@@ -15,10 +15,10 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 
-import com.example.taufik.masjid.R;
-import com.example.taufik.masjid.helpers.InputValidation;
-import com.example.taufik.masjid.model.User;
-import com.example.taufik.masjid.sql.DatabaseHelper;
+import com.geekies.sisfo.masjid.R;
+import com.geekies.sisfo.masjid.helpers.InputValidation;
+import com.geekies.sisfo.masjid.model.User;
+import com.geekies.sisfo.masjid.sql.DatabaseHelper;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
     private final AppCompatActivity activity = RegisterActivity.this;
