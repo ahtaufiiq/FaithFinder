@@ -41,7 +41,7 @@ public class UsersRecyclerAdapter extends RecyclerView.Adapter<UsersRecyclerAdap
 
     @Override
     public int getItemCount() {
-        Log.v(UsersRecyclerAdapter.class.getSimpleName(),""+listUsers.size());
+        Log.v(UsersRecyclerAdapter.class.getSimpleName(), "" + listUsers.size());
         return listUsers.size();
     }
 

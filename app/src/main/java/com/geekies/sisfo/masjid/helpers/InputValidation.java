@@ -56,7 +56,7 @@ public class InputValidation {
      */
     public boolean isInputEditTextEmail(TextInputEditText textInputEditText, TextInputLayout textInputLayout, String message) {
         String value = textInputEditText.getText().toString().trim();
-        if (value.isEmpty() ) {
+        if (value.isEmpty()) {
             textInputLayout.setError(message);
             hideKeyboardFrom(textInputEditText);
             return false;

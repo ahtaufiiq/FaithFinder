@@ -22,4 +22,10 @@
     <string name="action_settings">Settings</string>
     <string name="text_hello">Hello,</string>
     <string name="text_title">Faith Finder</string>
+    <string name="text_masjid">Masjid</string>
+    <string name="text_gereja">Gereja</string>
+    <string name="text_wihara">Wihara</string>
+    <string name="cari_wihara">Cari Wihara</string>
+    <string name="cari_gereja">Cari Gereja</string>
+    <string name="cari_masjid">Cari Masjid</string>
 </resources>

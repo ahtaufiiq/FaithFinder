@@ -1,7 +1,5 @@
 package com.geekies.sisfo.masjid;
 
-import android.os.Bundle;
-
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.location.Criteria;
@@ -9,6 +7,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -34,7 +33,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
-public class Masjid extends FragmentActivity implements LocationListener  {
+public class Masjid extends FragmentActivity implements LocationListener {
 
     private String API_KEY_SERVER = "AIzaSyAvObrgdwTTdphwOYplRp44f_Q52GUWYcI";// api maps yang dijadikan server
 
@@ -76,7 +75,7 @@ public class Masjid extends FragmentActivity implements LocationListener  {
                     StringBuilder sb = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
                     sb.append("location=" + mLatitude + "," + mLongitude);
                     sb.append("&radius=5000");
-                    sb.append("&types=masjid");// kata yang dicari di map
+                    sb.append("&types=mosque");// kata yang dicari di map
                     sb.append("&sensor=true");
                     sb.append("&key=" + API_KEY_SERVER);
 
@@ -88,6 +87,7 @@ public class Masjid extends FragmentActivity implements LocationListener  {
         }
 
     }
+
     //cuma peringatan selagi ada permission di manifest dapat dijalankan
     private void initMap() {
         if (mGoogleMap != null) {

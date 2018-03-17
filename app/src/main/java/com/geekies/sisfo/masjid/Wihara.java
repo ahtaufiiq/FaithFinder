@@ -1,7 +1,5 @@
 package com.geekies.sisfo.masjid;
 
-import android.os.Bundle;
-
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.location.Criteria;
@@ -9,6 +7,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -34,7 +33,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 
-public class Wihara extends FragmentActivity implements LocationListener  {
+public class Wihara extends FragmentActivity implements LocationListener {
 
     private String API_KEY_SERVER = "AIzaSyAvObrgdwTTdphwOYplRp44f_Q52GUWYcI";
 
@@ -76,7 +75,7 @@ public class Wihara extends FragmentActivity implements LocationListener  {
                     StringBuilder sb = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
                     sb.append("location=" + mLatitude + "," + mLongitude);
                     sb.append("&radius=10000");
-                    sb.append("&types=temple");//kata yang dicari di maps
+                    sb.append("&types=hindu_temple");//kata yang dicari di maps
                     sb.append("&sensor=true");
                     sb.append("&key=" + API_KEY_SERVER);
 

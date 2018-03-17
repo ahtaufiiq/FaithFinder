@@ -15,7 +15,6 @@ import java.util.List;
 public class ParseJSONPlace {
 
 
-
     public List<HashMap<String, String>> parse(JSONObject jObject) {
         JSONArray jPlaces = null;
         try {

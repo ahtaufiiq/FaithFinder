@@ -11,9 +11,9 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 
-import com.geekies.sisfo.masjid.sql.DatabaseHelper;
-import com.geekies.sisfo.masjid.helpers.InputValidation;
 import com.geekies.sisfo.masjid.R;
+import com.geekies.sisfo.masjid.helpers.InputValidation;
+import com.geekies.sisfo.masjid.sql.DatabaseHelper;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private final AppCompatActivity activity = LoginActivity.this;
