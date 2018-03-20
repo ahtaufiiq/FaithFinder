@@ -9,7 +9,7 @@ Faith Finder is Android Apps for searching mosque, church and hindu temple in ne
 Cloning Project
 
 ```
-git clone 
+git clone https://github.com/ataufiq123/FaithFinder.git
 ```
 
 ## Built With
